@@ -185,6 +185,15 @@ class UniPaySystem extends ObjectModel
 		return $ret;
 	}
 
+	public function getFields()
+	{
+		$fields = parent::getFields();
+
+		$fields['date_add'] = date('Y-m-d H:i:s');
+		
+		return $fields;
+	}
+
 /*	public function update($null_values = false)
 	{
 		$ret = parent::update($null_values);

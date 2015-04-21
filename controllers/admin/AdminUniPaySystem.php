@@ -30,6 +30,8 @@ class AdminUniPaySystemController extends ModuleAdminController
 			'logo' => array('title' => $this->l('Logo'), 'align' => 'center', 'image' => 'pay', 'orderby' => false, 'search' => false),
 			'name' => array('title' => $this->l('Name'), 'width' => 150),
 			'description_short' => array('title' => $this->l('Short description'), 'width' => 450, 'maxlength' => 90, 'orderby' => false),
+			'date_add' => array('title' => $this->l('Date Added'),  'align' => 'center', 'type' => 'bool', 'orderby' => false),
+			'date_upd' => array('title' => $this->l('Date Updated'),  'align' => 'center', 'type' => 'bool', 'orderby' => false),
 			'active' => array('title' => $this->l('Displayed'), 'active' => 'status', 'align' => 'center', 'type' => 'bool', 'orderby' => false)
 		);
 
